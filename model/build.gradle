@@ -6,16 +6,16 @@ plugins {
 apply from: '../config.gradle'
 
 android {
+    compileSdkVersion 31
 
-    compileSdkVersion android["compileSdkVersion"]
-    buildToolsVersion android["buildToolsVersion"]
     defaultConfig {
-        applicationId "com.blackc.notebook"
-        minSdkVersion android["minSdkVersion"]
-        targetSdkVersion android["targetSdkVersion"]
-        versionCode android["versionCode"]
-        versionName android["versionName"]
+        minSdkVersion 31
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {

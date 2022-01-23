@@ -1,2 +1,4 @@
 rootProject.name = "NoteBook"
 include ':app'
+include ':model'
+include ':viewmodel'
